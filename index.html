@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NFPC/NFTC 자동검토 (TEST)</title>
+  <style>
+    :root { --bg:#0b1220; --card:#121a2c; --muted:#9fb0d0; --text:#e8eefc; --line:#22304d; --ok:#34d399; --warn:#fbbf24; --bad:#fb7185; }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;background:linear-gradient(180deg,#070b14, #0b1220);color:var(--text)}
+    header{padding:22px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,18,32,.9);backdrop-filter: blur(8px)}
+    h1{margin:0;font-size:18px}
+    .sub{color:var(--muted);font-size:12px;margin-top:6px}
+    main{max-width:1100px;margin:0 auto;padding:16px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:920px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .pill{font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+    .pill.ok{border-color:rgba(52,211,153,.35);color:var(--ok)}
+    .pill.bad{border-color:rgba(251,113,133,.35);color:var(--bad)}
+    .pill.warn{border-color:rgba(251,191,36,.35);color:var(--warn)}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border-top:1px solid var(--line);padding:8px 6px;font-size:12px;vertical-align:top}
+    th{color:var(--muted);text-align:left;font-weight:600}
+    a{color:#93c5fd;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .small{font-size:12px;color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .footer{padding:18px;color:var(--muted);font-size:12px}
+    .btn{display:inline-block;margin-left:auto;font-size:12px;padding:7px 10px;border-radius:10px;border:1px solid var(--line);background:#0e1730;color:var(--text)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <div>
+        <h1>NFPC/NFTC 자동검토 (TEST)</h1>
+        <div class="sub">운영 페이지/데이터를 건드리지 않고 테스트 전용 파일(<span class="mono">data_test.json</span>, <span class="mono">snapshot_test.json</span>)로만 동작합니다.</div>
+      </div>
+      <a class="btn" href="../">운영 페이지로</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card" id="statusCard">
+        <div class="row">
+          <div class="pill" id="runPill">로딩…</div>
+          <div class="pill" id="modePill">MODE</div>
+          <div class="pill" id="changesPill">CHANGES</div>
+          <div class="pill" id="errorsPill">ERRORS</div>
+        </div>
+        <div class="small" style="margin-top:10px" id="statusText"></div>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <div><b>최근 실행 로그</b></div>
+          <div class="pill">/data_test.json</div>
+        </div>
+        <div id="log"></div>
+      </section>
+
+      <section class="card">
+        <div class="row"><b>NFPC 목록(테스트)</b><span class="pill">standards_nfpc_test.json</span></div>
+        <div id="nfpcList"></div>
+      </section>
+
+      <section class="card">
+        <div class="row"><b>NFTC 목록(테스트)</b><span class="pill">standards_nftc_test.json</span></div>
+        <div id="nftcList"></div>
+      </section>
+    </div>
+
+    <div class="footer">
+      - 이 페이지는 테스트용입니다. 실제 운영 자동검토는 별도 워크플로/데이터를 사용하세요.<br/>
+      - Actions에서 <span class="mono">NFPC NFTC Test Check</span> 실행 후 결과가 갱신됩니다.
+    </div>
+  </main>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "items": [
+    {"code": "NFPC 103", "title": "스프링클러설비의 화재안전성능기준", "query": "NFPC 103", "knd": 3, "orgName": "소방청"},
+    {"code": "NFPC 105", "title": "옥내소화전설비의 화재안전성능기준", "query": "NFPC 105", "knd": 3, "orgName": "소방청"},
+    {"code": "NFPC 104", "title": "자동화재탐지설비 및 시각경보기의 화재안전성능기준", "query": "NFPC 104", "knd": 3, "orgName": "소방청"}
+  ]
+}
