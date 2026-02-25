@@ -3,7 +3,7 @@
     "NFPC 103": {
       "code": "NFPC 103",
       "title": "스프링클러설비의 화재안전성능기준",
-      "checkedAt": "2026-02-25",
+      "checkedAt": "2026-02-26",
       "lawgoId": "MOCK-001",
       "noticeNo": "소방청고시 제2026-1호",
       "announceDate": "2026.02.25",
@@ -18,7 +18,7 @@
     "NFPC 105": {
       "code": "NFPC 105",
       "title": "옥내소화전설비의 화재안전성능기준",
-      "checkedAt": "2026-02-25",
+      "checkedAt": "2026-02-26",
       "lawgoId": "MOCK-001",
       "noticeNo": "소방청고시 제2026-1호",
       "announceDate": "2026.02.25",
@@ -33,7 +33,7 @@
     "NFPC 104": {
       "code": "NFPC 104",
       "title": "자동화재탐지설비 및 시각경보기의 화재안전성능기준",
-      "checkedAt": "2026-02-25",
+      "checkedAt": "2026-02-26",
       "lawgoId": "MOCK-001",
       "noticeNo": "소방청고시 제2026-1호",
       "announceDate": "2026.02.25",
@@ -50,7 +50,7 @@
     "NFTC 103": {
       "code": "NFTC 103",
       "title": "스프링클러설비의 화재안전기술기준",
-      "checkedAt": "2026-02-25",
+      "checkedAt": "2026-02-26",
       "lawgoId": "MOCK-001",
       "noticeNo": "소방청고시 제2026-1호",
       "announceDate": "2026.02.25",
@@ -65,7 +65,7 @@
     "NFTC 105": {
       "code": "NFTC 105",
       "title": "옥내소화전설비의 화재안전기술기준",
-      "checkedAt": "2026-02-25",
+      "checkedAt": "2026-02-26",
       "lawgoId": "MOCK-001",
       "noticeNo": "소방청고시 제2026-1호",
       "announceDate": "2026.02.25",
