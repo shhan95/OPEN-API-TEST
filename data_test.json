@@ -1,6 +1,21 @@
 {
-  "lastRun": "2026-02-26",
+  "lastRun": "2026-02-27",
   "records": [
+    {
+      "id": "2026-02-27",
+      "date": "2026-02-27",
+      "scope": "NFPC / NFTC TEST (법제처 OPEN API: 행정규칙)",
+      "result": "변경 없음",
+      "summary": "전일 대비 변경 감지 없음",
+      "changes": [],
+      "errors": [],
+      "refs": [],
+      "meta": {
+        "mock": true,
+        "standards_nfpc": "standards_nfpc_test.json",
+        "standards_nftc": "standards_nftc_test.json"
+      }
+    },
     {
       "id": "2026-02-26",
       "date": "2026-02-26",
